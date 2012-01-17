@@ -1,0 +1,10 @@
+AUTHORS
+=======
+
+Sphinx template, css, packaging
+-------------------------------
+* Shoji KUMAGAI <take.this.2.your.grave at gmail.com> Sphinx-users.jp
+
+Impress.js
+----------
+* Copyright 2011-2012 Bartek Szopka 
