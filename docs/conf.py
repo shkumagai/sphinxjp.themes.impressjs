@@ -14,3 +14,4 @@ version = '0.1.0'
 
 extensions = ['sphinxjp.themecore']
 html_theme = 'impressjs'
+html_use_index = False
