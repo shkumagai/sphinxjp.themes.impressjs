@@ -1,0 +1,37 @@
+{#
+    impressjs/layout.html
+    ~~~~~~~~~~~~~~~~~~~~~
+
+    Original layout template for Sphinx theme.
+
+    :copyright: Copyright (c) 2012 Sphinx-user.jp, see AUTHORS.
+    :license: MIT, see LICENSE for details.
+#}
+{%- block doctype -%}
+<!doctype html>
+
+{%- endblock -%}
+
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset={{ encoding }}" />
+    {{ metatags }}
+    {%- block htmltitle %}
+    <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+    {%- endblock %}
+    <link href="_static/impress-demo.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="impress">
+      <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b> or <b>Safari</b> browser. Firefox 10 (to be released soon) will also handle it.</p>
+      </div>
+      {% block body %} {% endblock %}
+    </div>
+    <div class="hint">
+    </div>
+    <script src="_static/impress.js"></script>
+  </body>
+</html>
