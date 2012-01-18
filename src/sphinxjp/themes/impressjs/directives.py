@@ -14,7 +14,13 @@ class Impressjs(Directive):
     required_arguments = 1
     optional_arguments = 1
     final_argument_whitespace = False
-    option_spec = {}
+    option_spec = {
+        'data-x': int,
+        'data-y': int,
+        'data-z': int,
+        'data-rotate': int,
+        'data-scale': int,
+    }
 
     def run(self):
         env = self.state.document.settings.env
@@ -25,6 +31,17 @@ class Impressjs(Directive):
             contents = '\n'.join(self.content)
 
         # Add feature specific implementation to here.
+        # - オプションを取り出し、divタグのattributeに加工する
+        # - 必要なオプション
+        #   - data-x
+        #   - data-y
+        #   - data-z
+        #   - data-rotate
+        #   - data-rotate-x
+        #   - data-rotate-y
+        #   - data-scale
+        #   - id
+        node = impressjs_node(text)
 
         if 'class' in self.options:
             node['classes'] += options['class']
