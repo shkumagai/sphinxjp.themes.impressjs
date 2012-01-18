@@ -45,4 +45,4 @@ def depart_impressjs_node(self, node=None):
 def setup(app):
     app.add_node(impressjs_node, html=(visit_impressjs_node, depart_impressjs_node))
 
-    app.add_directive('impressjs', Impressjs))
+    app.add_directive('impressjs', Impressjs)

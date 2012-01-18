@@ -12,6 +12,6 @@ def get_path():
     return template_path
 
 
-def set_directives(app):
+def setup_directives(app):
     """entry-point for sphinxjp.themecore directives."""
     directives.setup(app)
