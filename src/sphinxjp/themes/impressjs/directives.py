@@ -1,65 +1,91 @@
 # -*- coding: utf-8 -*-
+
+__docformat__ = 'reStrructuredText'
+
+from docutils.parsers.rst import directives
+from docutils.parsers.rst.roles import set_classes
 from docutils import nodes
 from sphinx.util.compat import Directive
 
 
-class impressjs_node(nodes.raw): pass
+class impressjs(nodes.General, nodes.Element): pass
+
 
 class Impressjs(Directive):
     """
     A impressjs entry, control impressjs slide effects, actions and styles.
     """
-
     has_content = True
     required_arguments = 1
     optional_arguments = 1
-    final_argument_whitespace = False
-    option_spec = {
-        'data-x': int,
-        'data-y': int,
-        'data-z': int,
-        'data-rotate': int,
-        'data-scale': int,
+    final_argument_whitespace = True
+
+    option_spec = {'data-x': int,
+                   'data-y': int,
+                   'data-z': int,
+                   'data-rotate-x': int,
+                   'data-rotate-y': int,
+                   'data-rotate': int,
+                   'data-scale-x': int,
+                   'data-scale-y': int,
+                   'data-scale': int,
+                   'id':int,
+                   'class': directives.class_option,
     }
 
+    node_class = impressjs
+
     def run(self):
-        env = self.state.document.settings.env
-        event = self.arguments[0]
-        if len(self.arguments) == 2:
-            contents = self.arguments[1]
-        else:
-            contents = '\n'.join(self.content)
+        """ build impressjs node """
+        set_classes(self.options)
+        self.assert_has_content()
+        text = '\n'.join(self.content)
+        node = self.node_class(text, **self.options)
+        self.add_name(node)
+        self.state.nested_parse(self.content, self.content_offset, node)
 
-        # Add feature specific implementation to here.
-        # - オプションを取り出し、divタグのattributeに加工する
-        # - 必要なオプション
-        #   - data-x
-        #   - data-y
-        #   - data-z
-        #   - data-rotate
-        #   - data-rotate-x
-        #   - data-rotate-y
-        #   - data-scale
-        #   - id
-        node = impressjs_node(text)
-
+        if self.arguments[0]:
+            node['ids'] = self.arguments[0]
         if 'class' in self.options:
-            node['classes'] += options['class']
+            node['classes'].append(options['class'])
 
         return [node]
 
 
-def visit_impressjs_node(self, node):
-    self.body.append(self.starttag(node, 'div'))
-    self.body.append(node.rawsource)
+def visit_impressjs(self, node):
+    """  """
+    atts = {'class': 'step'}
+        
+    if 'data-x' in node:
+        atts['data-x'] = node['data-x']
+    if 'data-y' in node:
+        atts['data-y'] = node['data-y']
+    if 'data-z' in node:
+        atts['data-z'] = node['data-z']
+    if 'data-rotate-x' in node:
+        atts['data-rotate-x'] = node['data-rotate-x']
+    if 'data-rotate-y' in node:
+        atts['data-rotate-y'] = node['data-rotate-y']
+    if 'data-rotate' in node:
+        atts['data-rotate'] = node['data-rotate']
+    if 'data-scale-x' in node:
+        atts['data-scale-x'] = node['data-scale-x']
+    if 'data-scale-y' in node:
+        atts['data-scale-y'] = node['data-scale-y']
+    if 'data-scale' in node:
+        atts['data-scale'] = node['data-scale']
+    # if 'id' in node:
+    #     atts['id'] = node['id']
+
+    self.body.append(self.starttag(node, 'div', **atts))
     self.set_first_last(node)
 
 
-def depart_impressjs_node(self, node=None):
-    self.body.append('</script>\n')
+def depart_impressjs(self, node=None):
+    self.body.append('</div>\n')
 
 
 def setup(app):
-    app.add_node(impressjs_node, html=(visit_impressjs_node, depart_impressjs_node))
-
+    app.add_node(impressjs,
+                 html=(visit_impressjs, depart_impressjs))
     app.add_directive('impressjs', Impressjs)
