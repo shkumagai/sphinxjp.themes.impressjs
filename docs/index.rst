@@ -36,6 +36,21 @@
       echo $text | tr "[:upper:]" "[:lower:]"
 
 
+.. impressjs:: samplepage4
+   :data-x: -3000
+   :data-y: -6500
+   :data-rotate: 70
+   :data-scale: 1
+
+   blockdiag_ も使えます。
+
+   .. blockdiag::
+
+      diagram {
+        A -> B -> C;
+             B -> D
+      }
+
 .. impressjs:: samplepage5
    :data-x: 0
    :data-y: 1000
