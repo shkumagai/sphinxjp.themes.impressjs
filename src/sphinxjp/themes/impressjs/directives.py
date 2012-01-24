@@ -26,11 +26,11 @@ class Impressjs(Directive):
                    'data-rotate-x': int,
                    'data-rotate-y': int,
                    'data-rotate': int,
-                   'data-scale-x': int,
-                   'data-scale-y': int,
-                   'data-scale': int,
+                   'data-scale-x': directives.length_or_unitless,
+                   'data-scale-y': directives.length_or_unitless,
+                   'data-scale': directives.length_or_unitless,
                    'id':int,
-                   'class': directives.class_option,
+                   'class': directives.class_option ,
     }
 
     node_class = impressjs
@@ -45,7 +45,7 @@ class Impressjs(Directive):
         self.state.nested_parse(self.content, self.content_offset, node)
 
         if self.arguments[0]:
-            node['ids'] = self.arguments[0]
+            node['ids'] += [self.arguments[0]]
         if 'class' in self.options:
             node['classes'].append(options['class'])
 
