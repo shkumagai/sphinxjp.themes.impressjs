@@ -495,3 +495,12 @@ a:hover {
     display: block;
 }
 
+/* Added for Sphinx theme. */
+.highlight {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    padding: 5px;
+    -border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+}
