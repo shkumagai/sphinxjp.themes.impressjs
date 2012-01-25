@@ -7,6 +7,7 @@
    これは Python_ 製ドキュメンテーションツール Sphinx_
    専用の **HTMLプレゼンテーションテーマ** です。
 
+
 .. impressjs:: samplepage2
    :data-x: 1200
    :data-y: 0
@@ -72,9 +73,9 @@
 
 
 .. impressjs:: overview
-   :data-x: 600
-   :data-y: 300
-   :data-scale: 8
+   :data-x: 800
+   :data-y: 500
+   :data-scale: 5
 
    .. overview
 
