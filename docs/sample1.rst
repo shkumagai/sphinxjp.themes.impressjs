@@ -1,17 +1,19 @@
-.. impressjs:: samplepage1
-   :data-x: 0
-   :data-y: 0
+Sample slide 1
+==============
+
+.. impressjs:: preface
+   :data-x: 1000
+   :data-y: 1000
    :data-scale: 1
-   :class: title
 
    これは Python_ 製ドキュメンテーションツール Sphinx_
    専用の **HTMLプレゼンテーションテーマ** です。
 
 
-.. impressjs:: samplepage2
-   :data-x: 1200
-   :data-y: 0
-   :data-rotate-y: 40
+.. impressjs:: merit
+   :data-x: 2000
+   :data-y: 1000
+   :data-rotate: 180
    :data-scale: 1
 
    ソースを reStructuredText_ で記述するだけで、
@@ -19,10 +21,9 @@
    作成することができます。
 
 
-.. impressjs:: samplepage3
-   :data-x: 2400
-   :data-y: 0
-   :data-rotate-y: 90
+.. impressjs:: code-highlight
+   :data-x: 3000
+   :data-y: 1000
    :data-scale: 1
 
    ソースコードのハイライトも可能です。
@@ -37,10 +38,9 @@
       echo $text | tr "[:upper:]" "[:lower:]"
 
 
-.. impressjs:: samplepage4
-   :data-x: -3000
-   :data-y: -6500
-   :data-rotate: 70
+.. impressjs:: blockdiagram
+   :data-x: 1000
+   :data-y: 1800
    :data-scale: 1
 
    blockdiag_ も使えます。
@@ -52,30 +52,41 @@
              B -> D
       }
 
-.. impressjs:: samplepage5
-   :data-x: 0
-   :data-y: 1000
+.. impressjs:: special-thanks
+   :data-x: 2000
+   :data-y: 1800
    :data-scale: 1
 
    このプレゼンテーションは `impress.js`_ を使っています。
 
 
-.. impressjs:: samplepage6
-   :data-x: 0
-   :data-y: -1000
-   :data-z: -300
-   :data-scale: 0.5
+.. impressjs:: not-impremented
+   :data-x: 3000
+   :data-y: 1800
+   :data-z: -1000
+   :data-scale: 1
 
    いまのところできないこと
 
-   - H1,H2...H6 を使えない
-   - data-scale に小数が使えない
+   - H1,H2...H6 を使えない（意図したレンダリングが出来ない状態）
+
+
+.. impressjs:: support
+   :data-x: 1000
+   :data-y: -1000
+   :data-scale: 0.5
+
+   推奨ブラウザ
+
+   − Chrome
+   − Safari
+   − Firefox 10 以降
 
 
 .. impressjs:: overview
-   :data-x: 800
-   :data-y: 500
-   :data-scale: 5
+   :data-x: 1500
+   :data-y: 900
+   :data-scale: 3
 
    .. overview
 
