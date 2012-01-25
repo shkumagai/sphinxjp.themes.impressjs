@@ -5,7 +5,7 @@
 source_suffix = '.rst'
 master_doc = 'index'
 
-project = u'sphinx theme for html presentation style'
+project = u'sphinx theme for dynamic html presentation style'
 copyright = u'2012, Sphinx-users.jp'
 
 version = '0.1.0'
