@@ -25,7 +25,7 @@ class Impressjs(Directive):
     A impressjs entry, control impressjs slide effects, actions and styles.
     """
     has_content = True
-    required_arguments = 1
+    required_arguments = 0
     optional_arguments = 1
     final_argument_whitespace = True
 
