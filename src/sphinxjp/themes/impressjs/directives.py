@@ -1,11 +1,20 @@
 # -*- coding: utf-8 -*-
+"""
+    sphinxjp.themes.imprssjs.directives
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-__docformat__ = 'reStrructuredText'
+    Impress.js Style specific HTML tag builder.
+
+    :copyright: Copyright (c) 2012, by Sphinx-users.jp, See AUTHORS.
+    :license: MIT, see LICENSE for details.
+"""
 
 from docutils.parsers.rst import directives
 from docutils.parsers.rst.roles import set_classes
 from docutils import nodes
 from sphinx.util.compat import Directive
+
+__docformat__ = 'reStrructuredText'
 
 
 class impressjs(nodes.General, nodes.Element): pass
@@ -20,17 +29,17 @@ class Impressjs(Directive):
     optional_arguments = 1
     final_argument_whitespace = True
 
-    option_spec = {'data-x': int,
-                   'data-y': int,
-                   'data-z': int,
-                   'data-rotate-x': int,
-                   'data-rotate-y': int,
-                   'data-rotate': int,
-                   'data-scale-x': directives.length_or_unitless,
-                   'data-scale-y': directives.length_or_unitless,
-                   'data-scale': directives.length_or_unitless,
-                   'id':int,
-                   'class': directives.class_option ,
+    option_spec = {
+        'data-x': int,
+        'data-y': int,
+        'data-z': int,
+        'data-rotate-x': int,
+        'data-rotate-y': int,
+        'data-rotate': int,
+        'data-scale-x': directives.length_or_unitless,
+        'data-scale-y': directives.length_or_unitless,
+        'data-scale': directives.length_or_unitless,
+        'class': directives.class_option ,
     }
 
     node_class = impressjs
@@ -53,7 +62,7 @@ class Impressjs(Directive):
 
 
 def visit_impressjs(self, node):
-    """  """
+    """ build div start tag for impres.js """
     atts = {'class': 'step'}
         
     if 'data-x' in node:
@@ -74,14 +83,13 @@ def visit_impressjs(self, node):
         atts['data-scale-y'] = node['data-scale-y']
     if 'data-scale' in node:
         atts['data-scale'] = node['data-scale']
-    # if 'id' in node:
-    #     atts['id'] = node['id']
 
     self.body.append(self.starttag(node, 'div', **atts))
     self.set_first_last(node)
 
 
 def depart_impressjs(self, node=None):
+    """ build div end tag """
     self.body.append('</div>\n')
 
 
