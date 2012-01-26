@@ -60,27 +60,34 @@ Sample slide 1
    このプレゼンテーションは `impress.js`_ を使っています。
 
 
-.. impressjs:: not-impremented
+.. impressjs:: not-impremented_title
    :data-x: 3000
    :data-y: 1800
-   :data-z: -1000
    :data-scale: 1
 
    いまのところできないこと
+
+
+.. impressjs:: not-implemented_1
+   :data-x: 3000
+   :data-y: 1800
+   :data-z: -100
+   :data-scale: 0.2
 
    - H1,H2...H6 を使えない（意図したレンダリングが出来ない状態）
 
 
 .. impressjs:: support
    :data-x: 1000
-   :data-y: -1000
+   :data-y: -700
+   :data-rotate-y: 90
    :data-scale: 0.5
 
    推奨ブラウザ
 
-   − Chrome
-   − Safari
-   − Firefox 10 以降
+   - Chrome
+   - Safari
+   - Firefox 10 以降
 
 
 .. impressjs:: overview

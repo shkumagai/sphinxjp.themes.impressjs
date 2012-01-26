@@ -8,7 +8,11 @@ TODO List
 
    - Not implemented
 
-     - h1, h2,...h6 tag will be render intended (I'll may need to use JQuery)
+     - h1, h2,...h6 tag will be render intended.
+
+       - Need to modify DOM tree, maybe :(
+
+     - Umm...
 
 
 .. impressjs:: undocumented
