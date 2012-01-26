@@ -70,9 +70,9 @@ Sample slide 1
 
 .. impressjs:: not-implemented_1
    :data-x: 3000
-   :data-y: 1800
-   :data-z: -100
-   :data-scale: 0.2
+   :data-y: 2000
+   :data-z: -200
+   :data-scale: 0.3
 
    - H1,H2...H6 を使えない（意図したレンダリングが出来ない状態）
 
