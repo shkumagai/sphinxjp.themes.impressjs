@@ -2,8 +2,9 @@ TODO List
 =========
 
 .. impressjs:: not-impremented
-   :data-x: 1000
-   :data-y: 1000
+   :data-x: 0
+   :data-y: -200
+   :data-z: -600
    :data-scale: 1
 
    - Not implemented
@@ -16,8 +17,9 @@ TODO List
 
 
 .. impressjs:: undocumented
-   :data-x: 1000
-   :data-y: 1300
+   :data-x: 0
+   :data-y: -400
+   :data-z: -1200
    :data-scale: 1
 
    - Undocumented
