@@ -511,5 +511,6 @@ h1,h2,h3,h4,h5,h6 {
     -webkit-border-radius: 15px;
     -moz-border-radius:    15px;
     border-radius:         15px;
-    background-color: rgba(32,32,32,0.2);
+    background-color: rgba(32,32,32,0.7);
+    font-size: 22pt;
 }
