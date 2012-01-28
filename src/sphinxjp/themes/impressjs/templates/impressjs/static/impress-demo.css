@@ -41,8 +41,12 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
-ol, ul {
-    list-style: none;
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: circle;
 }
 blockquote, q {
     quotes: none;
@@ -507,12 +511,5 @@ h1,h2,h3,h4,h5,h6 {
     -webkit-border-radius: 15px;
     -moz-border-radius:    15px;
     border-radius:         15px;
-}
-
-ol {
-    list-style-type: decimal;
-}
-
-ul {
-    list-style-type: disc;
+    background-color: rgba(32,32,32,0.2);
 }
