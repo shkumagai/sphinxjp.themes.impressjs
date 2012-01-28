@@ -1,6 +1,8 @@
 How to use
 ==========
 
+.. impressjs:: 
+
 - 'monokai',
 - 'manni',
 - 'perldoc',

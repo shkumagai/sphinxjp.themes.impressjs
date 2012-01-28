@@ -43,7 +43,7 @@ Sample slide 1
    :data-y: 1800
    :data-scale: 1
 
-   blockdiag_ も使えます。
+   blockdiag_ も\ **使えます**\ 。
 
    .. blockdiag::
 
