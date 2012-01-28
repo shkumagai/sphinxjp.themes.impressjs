@@ -6,8 +6,8 @@ Sample slide 1
    :data-y: 1000
    :data-scale: 1
 
-   これは Python_ 製ドキュメンテーションツール Sphinx_
-   専用の **HTMLプレゼンテーションテーマ** です。
+   Python_ 製ドキュメンテーションツール Sphinx_ 専用の
+   **HTMLプレゼンテーションテーマ**
 
 
 .. impressjs:: merit
@@ -16,9 +16,9 @@ Sample slide 1
    :data-rotate: 180
    :data-scale: 1
 
-   ソースを reStructuredText_ で記述するだけで、
-   ご覧のようなダイナミックなHTMLプレゼンテーションを
-   作成することができます。
+   1. ソースを reStructuredText_ で記述する
+   2. HTMLをビルド（\ ``make html``\ を実行）する
+   3. プレゼンテーションの出来上がり
 
 
 .. impressjs:: code-highlight
