@@ -7,11 +7,25 @@
     :copyright: Copyright (c) 2012 Sphinx-user.jp, see AUTHORS.
     :license: MIT, see LICENSE for details.
 #}
+{%- set pre_script_files = ['_static/jquery.js'] -%}
+{%- set post_script_files = ['_static/impress.js'] -%}
+
 {%- block doctype -%}
 <!doctype html>
 
 {%- endblock -%}
 
+{%- macro prescript() %}
+    {%- for scriptfile in pre_script_files %}
+    <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+    {%- endfor %}
+{%- endmacro %}
+
+{%- macro postscript() %}
+    {%- for scriptfile in post_script_files %}
+    <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+    {%- endfor %}
+{%- endmacro %}
 
 <html>
   <head>
@@ -20,6 +34,7 @@
     {%- block htmltitle %}
     <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
     {%- endblock %}
+    {{ prescript() }}
     <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
     <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
   </head>
@@ -33,6 +48,6 @@
     </div>
     <div class="hint">
     </div>
-    <script src="_static/impress.js"></script>
+    {{ postscript() }}
   </body>
 </html>
