@@ -1,17 +1,17 @@
 .. This is sample documentation file for sphinxjp.themes.impressjs.
 
-
 ======================================================
  Welcome to sphinxjp.themes.impressjs's documentation
 ======================================================
 
-.. impressjs:: toc
-   :data-x: 1000
-   :data-y: 1000
+.. impressjs:: tree-of-contents
+   :data-x: -200
+   :data-y: -300
    :data-scale: 1
 
    .. toctree::
-      :maxdepth: 2
+      :maxdepth: 1
 
-      sample1
+      whatisthis
+      howtouse
       todo
