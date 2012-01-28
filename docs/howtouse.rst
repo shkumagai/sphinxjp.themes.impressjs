@@ -1,3 +1,21 @@
 How to use
 ==========
 
+- 'monokai',
+- 'manni',
+- 'perldoc',
+- 'borland',
+- 'colorful',
+- 'default',
+- 'murphy',
+- 'vs',
+- 'trac',
+- 'tango',
+- 'fruity',
+- 'autumn',
+- 'bw',
+- 'emacs',
+- 'vim',
+- 'pastie',
+- 'friendly',
+- 'native',
