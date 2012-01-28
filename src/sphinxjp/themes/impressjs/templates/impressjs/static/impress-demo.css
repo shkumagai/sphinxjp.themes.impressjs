@@ -496,11 +496,23 @@ a:hover {
 }
 
 /* Added for Sphinx theme. */
+h1,h2,h3,h4,h5,h6 {
+    display: none;
+}
+
 .highlight {
     margin-top: 0.5em;
     margin-bottom: 1em;
     padding: 5px;
-    -border-radius: 15px;
     -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
+    -moz-border-radius:    15px;
+    border-radius:         15px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
 }
