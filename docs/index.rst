@@ -4,11 +4,20 @@
  Welcome to sphinxjp.themes.impressjs's documentation
 ======================================================
 
+.. impressjs:: title
+   :data-x: 0
+   :data-y: 800
+   :data-scale: 1
+
+   .. raw:: html
+
+      <h1>sphinxjp.themes.impressjs</h1>
+
+
 .. impressjs:: quick-start
    :data-x: 0
    :data-y: 0
    :data-scale: 1
-   :class: slide
 
    Quick Start
 
@@ -58,10 +67,10 @@
 
 
 .. impressjs:: contents
-   :data-x: 3500
+   :data-x: 3000
    :data-y: 0
    :data-z: -500
-   :data-rotate-y: 90
+   :data-rotate-y: 180
    :data-scale: 1
 
    Contents:
