@@ -41,12 +41,8 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
-ol {
-    list-style-type: decimal;
-}
-
-ul {
-    list-style-type: circle;
+ol, ul {
+    list-style: none;
 }
 blockquote, q {
     quotes: none;
@@ -499,18 +495,3 @@ a:hover {
     display: block;
 }
 
-/* Added for Sphinx theme. */
-h1,h2,h3,h4,h5,h6 {
-    display: none;
-}
-
-.highlight {
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-    padding: 5px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius:    15px;
-    border-radius:         15px;
-    background-color: rgba(32,32,32,0.7);
-    font-size: 22pt;
-}
