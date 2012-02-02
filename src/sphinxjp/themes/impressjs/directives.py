@@ -25,7 +25,7 @@ class Impressjs(Directive):
     A impressjs entry, control impressjs slide effects, actions and styles.
     """
     has_content = True
-    required_arguments = 0
+    required_arguments = 1
     optional_arguments = 1
     final_argument_whitespace = True
 
@@ -36,9 +36,9 @@ class Impressjs(Directive):
         'data-rotate-x': int,
         'data-rotate-y': int,
         'data-rotate': int,
-        'data-scale-x': directives.length_or_unitless,
-        'data-scale-y': directives.length_or_unitless,
-        'data-scale': directives.length_or_unitless,
+        'data-scale-x': int,
+        'data-scale-y': int,
+        'data-scale': int,
         'class': directives.class_option ,
     }
 
