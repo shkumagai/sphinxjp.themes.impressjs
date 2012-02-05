@@ -60,7 +60,7 @@ table {
 
 
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: serif;
     
     min-height: 740px;
 
@@ -109,7 +109,7 @@ a:hover {
     -o-box-sizing:      border-box;
     box-sizing:         border-box;
 
-    font-family: 'PT Serif', georgia, serif;
+    font-family: georgia, serif;
 
     font-size: 48px;
     line-height: 1.5;
@@ -179,65 +179,7 @@ a:hover {
     transform:         translateY(0px);
 }
 
-/* impress.js title */
-
-#title {
-    padding: 0;
-}
-
-#title .try {
-    font-size: 64px;
-    position: absolute;
-    top: -0.5em;
-    left: 1.5em;
-    
-    -webkit-transform: translateZ(20px);
-    -moz-transform:    translateZ(20px);
-    -ms-transform:     translateZ(20px);
-    -o-transform:      translateZ(20px);
-    transform:         translateZ(20px);
-}
-
-#title h1 {
-    font-size: 190px;
-    
-    -webkit-transform: translateZ(50px);
-    -moz-transform:    translateZ(50px);
-    -ms-transform:     translateZ(50px);
-    -o-transform:      translateZ(50px);
-    transform:         translateZ(50px);
-}
-
-#title .footnote {
-    font-size: 32px;
-}
-
-/* big thoughts */
-
-#big {
-    width: 600px;
-    text-align: center;
-    font-size: 60px;
-    line-height: 1;
-}
-
-#big b {
-    display: block;
-    font-size: 250px;
-    line-height: 250px;
-}
-
-#big .thoughts {
-    font-size: 90px;
-    line-height: 150px;
-}
-
-/* tiny ideas */
-
-#tiny {
-    width: 500px;
-    text-align: center;
-}
+/* #ing STYLE */
 
 #ing {
     width: 500px;
@@ -293,16 +235,6 @@ a:hover {
     -o-transition-delay:      2s;
     transition-delay:         2s;
 
-}
-
-/* imagination */
-
-#imagination {
-    width: 600px;
-}
-
-#imagination .imagination {
-    font-size: 78px;
 }
 
 /* use the source, Luke */
@@ -441,13 +373,13 @@ a:hover {
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
     border: 1px solid rgba(0, 0, 0, .3);
 
-    font-family: 'Open Sans', Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
 
     color: rgb(102, 102, 102);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 36px;
+    line-height: 42px;
 
     letter-spacing: -1px;
 }
@@ -495,3 +427,42 @@ a:hover {
     display: block;
 }
 
+/* sphinxjp.themes.impressjs STYLES */
+
+.section>h1 {
+    display: none;
+}
+
+#title {
+    font-size: 72px;
+    left: -0.25em;
+    -webkit-transform: translateZ(20px);
+    -moz-transform:    translateZ(20px);
+    -ms-transform:     translateZ(20px);
+    -o-transform:      translateZ(20px);
+    transform:         translateZ(20px);
+}
+
+.step p {
+    margin-top:    0.5em;
+    margin-bottom: 0.5em;
+}
+
+.step .highlight {
+    padding: 5px;
+    font-size: 24px;
+    font-family: monospace;
+    line-height: 1.0;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius:    5px;
+    -ms-border-radius:     5px;
+    -o-border-radius:      5px;
+    border-radius:         5px;
+}
+
+.step ol,
+.step ul {
+    margin-left: 1.5em;
+    list-style-type: circle;
+}
