@@ -28,6 +28,7 @@ setup conf.py with::
 
    extensions = ['sphinxjp.themecore']
    html_theme = 'impressjs'
+   html_use_index = False
 
 
 and run::

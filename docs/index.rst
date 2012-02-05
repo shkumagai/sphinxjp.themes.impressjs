@@ -23,7 +23,8 @@
 
    *Feature:*
 
-      - provide ``impressjs`` directive to render HTML presentation
+      * provide ``impressjs`` directive for impress.js presentaion control
+      * provide ``impressjs`` presentation theme for render HTML document
 
 
 .. impressjs:: installation
