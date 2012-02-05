@@ -1,20 +1,19 @@
 # -*- coding: utf-8 -*-
 #
-# -- General configuration -----------------------------------------------------
+# -- General configuration -------------------------------------
 
 source_suffix = '.rst'
 master_doc = 'index'
 
-project = u'sphinx theme for dynamic html presentation style'
+project = u'Sphinx theme for dynamic html presentation style'
 copyright = u'2012, Sphinx-users.jp'
 
 version = '0.1.0'
 
-# -- Options for HTML output ---------------------------------------------------
+# -- Options for HTML output -----------------------------------
 
 extensions = ['sphinxjp.themecore',
               'sphinxcontrib.blockdiag',
-              'sphinxcontrib.seqdiag',
-              ]
+              'sphinxcontrib.seqdiag']
 html_theme = 'impressjs'
 html_use_index = False
