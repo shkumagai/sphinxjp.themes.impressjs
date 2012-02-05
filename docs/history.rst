@@ -7,7 +7,7 @@
    :data-y: 0
    :data-scale: 1
 
-   0.1.0 (Feb 5, 2012)
+   *0.1.0 (Feb 5, 2012)*
 
    - first release
 

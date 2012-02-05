@@ -29,11 +29,4 @@
       html_theme = 'impressjs'
       
 
-.. impressjs:: 
-   :data-x: 0
-   :data-y: 0
-   :data-scale: 1
-
-   Nothing.
-
 .. END
