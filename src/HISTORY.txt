@@ -1,6 +1,10 @@
 HISTORY
 =======
 
+0.1.1 (2012.02.06)
+------------------
+* Unify a text representation.
+
 0.1.0 (2012.02.05)
 ------------------
 * first release
