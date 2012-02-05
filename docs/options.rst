@@ -27,6 +27,7 @@
       
       extensions = ['sphinxjp.themecore']
       html_theme = 'impressjs'
+      html_use_index = False
       
 
 .. END
