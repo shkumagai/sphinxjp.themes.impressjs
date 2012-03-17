@@ -52,6 +52,7 @@
 
       extensions = ['sphinxjp.themecore']
       html_theme = 'sphinxjp.themes.impressjs'
+      html_use_index = False
 
 
 .. impressjs:: make
@@ -79,7 +80,7 @@
    *requirement:*
 
    Python 2.4 or later (not support 3.x)
-   
+
    Sphinx 1.0.x or later
 
 

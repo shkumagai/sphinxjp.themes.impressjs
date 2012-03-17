@@ -1,6 +1,11 @@
 HISTORY
 =======
 
+0.1.2 (2012.03.17)
+------------------
+* Fix packaging failure.
+* Fix typos.
+
 0.1.1 (2012.02.06)
 ------------------
 * Unify a text representation.
