@@ -26,6 +26,7 @@ Make environment with easy_install::
 
 setup conf.py with::
 
+   extensions = ['sphinxjp.themes.impressjs']
    html_theme = 'impressjs'
    html_use_index = False
 
