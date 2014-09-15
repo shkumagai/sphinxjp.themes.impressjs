@@ -48,7 +48,7 @@ Browsers:
 
 * Safari
 * Chrome
-* Firefox 10
+* Firefox
 
 
 License
