@@ -41,10 +41,10 @@ setup(
     ],
     entry_points="""
         [sphinx_themes]
-        path = sphinxjp.themes.impressjs:template_path
+        path = sphinxjp.themes.impressjs:get_path
 
         [sphinx_directives]
-        setup = sphinxjp.themes.impressjs:setup_directives
+        setup = sphinxjp.themes.impressjs:setup
     """,
     zip_safe=False,
 )
