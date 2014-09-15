@@ -78,9 +78,9 @@
 
    *requirement:*
 
-   Python 2.4 or later (not support 3.x)
+   Python 2.7 or later (not support 3.x)
 
-   Sphinx 1.0.x or later
+   Sphinx 1.2.x or later
 
 
 .. impressjs:: license
