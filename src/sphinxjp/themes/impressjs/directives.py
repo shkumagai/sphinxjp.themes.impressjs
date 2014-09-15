@@ -14,7 +14,7 @@ from docutils.parsers.rst.roles import set_classes
 from docutils import nodes
 from sphinx.util.compat import Directive
 
-__docformat__ = 'reStrructuredText'
+__docformat__ = 'reStructuredText'
 
 
 class impressjs(nodes.General, nodes.Element): pass
@@ -64,7 +64,7 @@ class Impressjs(Directive):
 def visit_impressjs(self, node):
     """ build div start tag for impres.js """
     atts = {'class': 'step'}
-        
+
     if 'data-x' in node:
         atts['data-x'] = node['data-x']
     if 'data-y' in node:
