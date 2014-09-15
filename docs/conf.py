@@ -8,7 +8,7 @@ master_doc = 'index'
 project = u'Sphinx theme for dynamic html presentation style'
 copyright = u'2012, Sphinx-users.jp'
 
-version = '0.1.2'
+version = '0.1.3'
 
 # -- Options for HTML output -----------------------------------
 
