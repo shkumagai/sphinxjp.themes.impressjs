@@ -21,7 +21,7 @@ Installation
 ============
 Make environment with easy_install::
 
-   $ easy_install sphinxjp.themes.impressjs
+   $ pip sphinxjp.themes.impressjs
 
 
 setup conf.py with::

@@ -37,7 +37,7 @@
 
    .. code-block:: bash
 
-      $ easy_install sphinxjp.themes.impressjs
+      $ pip sphinxjp.themes.impressjs
 
 
 .. impressjs:: setup
