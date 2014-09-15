@@ -50,7 +50,6 @@
 
    .. code-block:: python
 
-      extensions = ['sphinxjp.themecore']
       html_theme = 'sphinxjp.themes.impressjs'
       html_use_index = False
 

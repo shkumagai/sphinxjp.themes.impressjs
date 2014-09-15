@@ -38,7 +38,6 @@ setup(
         'setuptools',
         'docutils',
         'sphinx',
-        'sphinxjp.themecore',
     ],
     entry_points="""
         [sphinx_themes]
@@ -49,4 +48,3 @@ setup(
     """,
     zip_safe=False,
 )
-
