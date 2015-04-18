@@ -12,8 +12,7 @@ version = '0.1.3'
 
 # -- Options for HTML output -----------------------------------
 
-extensions = ['sphinxjp.themes.impressjs',
-              'sphinxcontrib.blockdiag',
-              'sphinxcontrib.seqdiag']
+extensions = ['sphinxjp.themes.impressjs', ]
+
 html_theme = 'impressjs'
 html_use_index = False
