@@ -2,14 +2,15 @@
  History
 =========
 
-.. impressjs:: head
+.. impressjs:: 0.1.4
    :data-x: 0
    :data-y: 0
    :data-scale: 1
 
-   *head*
+   *0.1.4 (12 Jan, 2017)*
 
-   - Fix import failure when using Python3.
+   - Fix import failure when using Python3
+   - Fix some document typos
 
 
 .. impressjs:: 0.1.3
@@ -29,8 +30,8 @@
 
    *0.1.2 (17 Mar, 2012)*
 
-   - Fix packaging failure.
-   - Fix typos.
+   - Fix packaging failure
+   - Fix typos
 
 
 .. impressjs:: 0.1.1
@@ -40,7 +41,7 @@
 
    *0.1.1 (6 Feb, 2012)*
 
-   - Unify a text representation.
+   - Unify a text representation
 
 
 .. impressjs:: 0.1.0
