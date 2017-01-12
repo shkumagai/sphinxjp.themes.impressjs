@@ -21,7 +21,7 @@ Installation
 ============
 Make environment with easy_install::
 
-   $ pip sphinxjp.themes.impressjs
+   $ pip install sphinxjp.themes.impressjs
 
 
 setup conf.py with::
@@ -40,7 +40,7 @@ Requirement
 ===========
 Libraries:
 
-* Python 2.7 or later (not support 3.x)
+* Python 2.7 or later
 * Sphinx 1.2.x or later.
 
 

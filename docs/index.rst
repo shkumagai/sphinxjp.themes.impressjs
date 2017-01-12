@@ -37,7 +37,7 @@
 
    .. code-block:: bash
 
-      $ pip sphinxjp.themes.impressjs
+      $ pip install sphinxjp.themes.impressjs
 
 
 .. impressjs:: setup
@@ -79,7 +79,7 @@
 
    *requirement:*
 
-   Python 2.7 or later (not support 3.x)
+   Python 2.7 or later
 
    Sphinx 1.2.x or later
 
@@ -109,7 +109,7 @@
 
    All codes on Github:
 
-   repository_, downloads_, issues_
+   repository_, issues_
 
    Feel free to fork them on Github!
 
@@ -137,7 +137,6 @@
 
 .. _mit:        http://www.opensource.org/licenses/mit-license.php
 .. _repository: https://github.com/shkumagai/sphinxjp.themes.impressjs
-.. _downloads:  https://github.com/shkumagai/sphinxjp.themes.impressjs/downloads
 .. _issues:     https://github.com/shkumagai/sphinxjp.themes.impressjs/issues
 
 .. END
