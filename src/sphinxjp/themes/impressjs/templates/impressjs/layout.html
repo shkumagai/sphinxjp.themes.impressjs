@@ -7,13 +7,11 @@
     :copyright: Copyright (c) 2012 Sphinx-user.jp, see AUTHORS.
     :license: MIT, see LICENSE for details.
 #}
-{%- set pre_script_files = [''] -%}
-{%- set post_script_files = ['_static/impress.js'] -%}
-
 {%- block doctype -%}
-<!doctype html>
-
+<!DOCTYPE html>
 {%- endblock -%}
+
+{%- set post_script_files = ['_static/impress.js'] -%}
 
 {%- macro prescript() %}
     {%- for scriptfile in pre_script_files %}
