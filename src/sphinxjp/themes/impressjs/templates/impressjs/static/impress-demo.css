@@ -701,3 +701,38 @@ a:focus {
     Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
     for you.
 */
+
+.section h1 {
+    display: none;
+}
+
+.step div.highlight, .step div.linenodiv {
+    width: 100%;
+    padding: 0.45em;
+    font-size: 28px;
+}
+
+.step div.linenodiv {
+    color: #f8f8f2;
+    background-color: #272822;
+
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+
+.step div.highlight {
+    border-left: solid 1px rgb(215, 215, 215);
+
+    border-radius: 0.5em;
+
+    overflow: scroll;
+}
+
+.step .highlighttable td.code {
+    width: 100%;
+}
+
+.step td.code>div.highlight {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

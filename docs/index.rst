@@ -49,6 +49,7 @@
    *setup your* ``conf.py`` *with:*
 
    .. code-block:: python
+      :linenos:
 
       extensions = ['sphinxjp.themes.impressjs']
       html_theme = 'sphinxjp.themes.impressjs'
