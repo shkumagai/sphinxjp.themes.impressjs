@@ -12,7 +12,7 @@
 from docutils.parsers.rst import directives
 from docutils.parsers.rst.roles import set_classes
 from docutils import nodes
-from sphinx.util.compat import Directive
+from docutils.parsers.rst import Directive
 
 __docformat__ = 'reStructuredText'
 
