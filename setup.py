@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
-from setuptools import setup, find_packages
 import os
+from setuptools import setup, find_packages
 
-version = '0.1.4'
+
+from sphinxjp.themes.impressjs import __version__
+
+
+version = __version__
 long_description = '\n'.join([
     open(os.path.join("src", "README.txt")).read(),
     open(os.path.join("src", "AUTHORS.txt")).read(),
@@ -39,12 +43,10 @@ setup(
         'docutils',
         'sphinx',
     ],
-    entry_points="""
-        [sphinx_themes]
-        path = sphinxjp.themes.impressjs:get_path
-
-        [sphinx_directives]
-        setup = sphinxjp.themes.impressjs:setup
-    """,
+    entry_points={
+        "sphinx.html_themes": [
+            "impressjs = sphinxjp.themes.impressjs",
+        ],
+    },
     zip_safe=False,
 )
