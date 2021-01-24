@@ -1,3 +1,17 @@
+graft sphinxjp.themes.impressjs
+
+include AUTHORS.txt
+include HISTORY.txt
+include LICENSE
 include MANIFEST.in
-recursive-include docs *
-recursive-include src *.py *.txt *.html *.css* *.js *.conf
+include README.rst
+include requirement.txt
+include setup.cfg
+include setup.py
+
+exclude .editorconfig
+exclude .pyup.yml
+exclude tox.ini
+
+recursive-include sphinxjp *.py *.txt *.html *.css* *.js *.conf
+recursive-exclude docs *

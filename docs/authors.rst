@@ -9,7 +9,7 @@
 
    *Sphinx template, css, packaging*
 
-   Shoji KUMAGAI <take.this.2.your.grave@gmail.com> sphinx-user.jp.
+   Shoji KUMAGAI <take.this.2.your.grave@gmail.com> Sphinx-User.jp.
 
 
 .. impressjs:: thanksto
@@ -19,7 +19,8 @@
 
    *Impress.js*
 
-   Copyright 2011-2012 Bartek Szopka
+   Copyright 2011-2016 Bartek Szopka
+   Copyright 2015-2017 Henrik Ingo
 
    source_ (Github)
 

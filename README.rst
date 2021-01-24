@@ -40,8 +40,8 @@ Requirement
 ===========
 Libraries:
 
-* Python 2.7 or later
-* Sphinx 1.2.x or later.
+* Python 3.x or later
+* Sphinx 3.x or later.
 
 
 Browsers:
