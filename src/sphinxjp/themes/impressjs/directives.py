@@ -17,7 +17,8 @@ from docutils.parsers.rst import Directive
 __docformat__ = 'reStructuredText'
 
 
-class impressjs(nodes.General, nodes.Element): pass
+class impressjs(nodes.General, nodes.Element):
+    pass
 
 
 class Impressjs(Directive):
@@ -39,7 +40,7 @@ class Impressjs(Directive):
         'data-scale-x': int,
         'data-scale-y': int,
         'data-scale': int,
-        'class': directives.class_option ,
+        'class': directives.class_option,
     }
 
     node_class = impressjs
@@ -56,7 +57,7 @@ class Impressjs(Directive):
         if self.arguments[0]:
             node['ids'] += [self.arguments[0]]
         if 'class' in self.options:
-            node['classes'].append(options['class'])
+            node['classes'].append(self.options['class'])
 
         return [node]
 
@@ -85,7 +86,6 @@ def visit_impressjs(self, node):
         atts['data-scale'] = node['data-scale']
 
     self.body.append(self.starttag(node, 'div', **atts))
-    self.set_first_last(node)
 
 
 def depart_impressjs(self, node=None):
