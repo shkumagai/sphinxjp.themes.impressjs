@@ -1,16 +1,20 @@
 # -*- coding: utf-8 -*-
-import os
-
 from setuptools import find_packages, setup
 
 from sphinxjp.themes.impressjs import __version__
 
 version = __version__
-long_description = '\n'.join([
-    open(os.path.join("src", "README.txt")).read(),
-    open(os.path.join("src", "AUTHORS.txt")).read(),
-    open(os.path.join("src", "HISTORY.txt")).read(),
-])
+
+with open("README.rst") as readme_fp:
+    readme = readme_fp.read()
+
+with open("AUTHORS.txt") as authoers_fp:
+    authors = authoers_fp.read()
+
+with open("HISTORY.txt") as history_fp:
+    history = history_fp.read()
+
+long_description = '\n'.join([readme, authors, history])
 
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -45,8 +49,7 @@ setup(
     url='https://github.com/shkumagai/sphinxjp.themes.impressjs',
     license='MIT',
     namespace_packages=['sphinxjp', 'sphinxjp.themes'],
-    packages=find_packages('src'),
-    package_dir={'': 'src'},
+    packages=find_packages(exclude=["docs"]),
     include_package_data=True,
     install_requires=[
         'setuptools',
@@ -58,6 +61,6 @@ setup(
             "impressjs = sphinxjp.themes.impressjs",
         ],
     },
-    python_required=">=3.5",
+    python_requires=">=3.5",
     zip_safe=False,
 )
