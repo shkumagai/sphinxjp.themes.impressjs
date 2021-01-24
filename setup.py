@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 import os
-from setuptools import setup, find_packages
 
+from setuptools import find_packages, setup
 
 from sphinxjp.themes.impressjs import __version__
-
 
 version = __version__
 long_description = '\n'.join([
@@ -17,6 +16,18 @@ classifiers = [
     "Development Status :: 4 - Beta",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python",
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3.5',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Framework :: Sphinx',
+    'Framework :: Sphinx :: Extension',
+    'Framework :: Sphinx :: Theme',
+    'Topic :: Documentation',
+    'Topic :: Documentation :: Sphinx',
     "Topic :: Software Development",
     "Topic :: Software Development :: Documentation",
     "Topic :: Text Processing :: Markup",
@@ -36,7 +47,6 @@ setup(
     namespace_packages=['sphinxjp', 'sphinxjp.themes'],
     packages=find_packages('src'),
     package_dir={'': 'src'},
-    package_data={'': ['buildout.cfg']},
     include_package_data=True,
     install_requires=[
         'setuptools',
@@ -48,5 +58,6 @@ setup(
             "impressjs = sphinxjp.themes.impressjs",
         ],
     },
+    python_required=">=3.5",
     zip_safe=False,
 )

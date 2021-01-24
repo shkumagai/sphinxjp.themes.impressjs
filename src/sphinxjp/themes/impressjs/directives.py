@@ -9,10 +9,9 @@
     :license: MIT, see LICENSE for details.
 """
 
-from docutils.parsers.rst import directives
-from docutils.parsers.rst.roles import set_classes
 from docutils import nodes
-from docutils.parsers.rst import Directive
+from docutils.parsers.rst import Directive, directives
+from docutils.parsers.rst.roles import set_classes
 
 __docformat__ = 'reStructuredText'
 
