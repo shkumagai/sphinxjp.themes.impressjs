@@ -1,1 +1,1 @@
-Sphinx==1.5.1
+Sphinx>=3.4
