@@ -7,4 +7,5 @@ Sphinx template, css, packaging
 
 Impress.js
 ----------
-* Copyright 2011-2012 Bartek Szopka
+* Copyright 2011-2016 Bartek Szopka
+* Copyright 2015-2017 Henrik Ingo
