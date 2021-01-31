@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "sphinxjp-themes-impressjs"
+version = "0.5.0"
+description = "Impress.js presentation style theme for Sphinx."
+readme = "README.rst"
+authors = ["shkumagai <take.this.2.your.grave@gmail.com>"]
+homepage = "https://github.com/shkumagai/sphinxjp.themes.impressjs"
+license = "MIT"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Framework :: Sphinx",
+    "Framework :: Sphinx :: Extension",
+    "Framework :: Sphinx :: Theme",
+    "Topic :: Documentation",
+    "Topic :: Documentation :: Sphinx",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Text Processing :: Markup",
+]
+packages = [
+    { include = "sphinxjp" },
+]
+include = [
+    "AUTHORS.txt",
+    "HISTORY.txt",
+    "LICENSE",
+    "MANIFEST.in",
+    "requirement.txt",
+    "*.js",
+    "*.css",
+    "*.map",
+]
+
+[tool.poetry.dependencies]
+python = "^3.5"
+Sphinx = "^3.0"
+
+[tool.poetry.dev-dependencies]
+tox = "^3.21.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

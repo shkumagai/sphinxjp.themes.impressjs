@@ -11,6 +11,9 @@ include setup.py
 
 exclude .editorconfig
 exclude .pyup.yml
+exclude *.json
+exclude *.lock
+exclude Makefile
 exclude tox.ini
 
 recursive-include sphinxjp *.py *.txt *.html *.css* *.js *.conf
