@@ -1,0 +1,18 @@
+{
+  "name": "sphinxjp.themes.impressjs",
+  "version": "0.5.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shkumagai/sphinxjp.themes.impressjs.git"
+  },
+  "private": false,
+  "license": "MIT",
+  "dependencies": {
+    "impress.js": "^1.1.0"
+  },
+  "author": "Shoji KUMAGAI",
+  "bugs": {
+    "url": "https://github.com/shkumagai/sphinxjp.themes.impressjs/issues"
+  },
+  "homepage": "https://github.com/shkumagai/sphinxjp.themes.impressjs#readme"
+}

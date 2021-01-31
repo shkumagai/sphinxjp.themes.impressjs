@@ -45,7 +45,7 @@ setup(
     classifiers=classifiers,
     keywords=['sphinx', 'reStructuredText', 'theme', 'presentation'],
     author='Shoji KUMAGAI',
-    author_email='take dot this dot 2 dot your dot grave at gmail dot com',
+    author_email='take.this.2.your.grave@gmail dot com',
     url='https://github.com/shkumagai/sphinxjp.themes.impressjs',
     license='MIT',
     namespace_packages=['sphinxjp', 'sphinxjp.themes'],

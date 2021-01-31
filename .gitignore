@@ -3,7 +3,9 @@ develop-eggs/
 dist/
 eggs/
 parts/
+.venv
 .installed.cfg
 _build/
 *.egg-info/
 *.pyc
+node_modules/

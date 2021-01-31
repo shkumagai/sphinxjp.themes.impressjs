@@ -30,6 +30,7 @@
 .. impressjs:: installation
    :data-x: -1000
    :data-y: -800
+   :data-z: -200
    :data-rotate-y: 30
    :data-scale: 1
 
