@@ -55,7 +55,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        env: [flake8, isort, bandit, readme, check-manifest]
+        env: [flake8, isort, bandit, readme]
 
     steps:
       - name: Checkout code
