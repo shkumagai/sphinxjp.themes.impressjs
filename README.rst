@@ -5,12 +5,6 @@
 Impress.js presentation style theme for Sphinx.
 
 
-Output sample
-=============
-:output: http://packages.python.org/sphinxjp.themes.impressjs
-:source: http://packages.python.org/sphinxjp.themes.impressjs/_sources/index.txt
-
-
 Feature
 =======
 * provide ``impressjs`` directive for impress.js presentaion control
@@ -40,8 +34,8 @@ Requirement
 ===========
 Libraries:
 
-* Python 3.x or later
-* Sphinx 3.x or later.
+* Python 3.6 or later
+* Sphinx 3.0 or later.
 
 
 Browsers:

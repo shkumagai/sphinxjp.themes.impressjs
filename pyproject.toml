@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "sphinxjp-themes-impressjs"
+name = "sphinxjp.themes.impressjs"
 version = "0.5.0"
 description = "Impress.js presentation style theme for Sphinx."
 readme = "README.rst"
@@ -12,7 +12,6 @@ classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.5",
     "Programming Language :: Python :: 3.6",
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
@@ -41,11 +40,21 @@ include = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.5"
+python = "^3.6"
 Sphinx = "^3.0"
 
 [tool.poetry.dev-dependencies]
 tox = "^3.21.3"
+black = "^20.8b1"
+isort = "^5.7.0"
+flake8 = "^3.8.4"
+bandit = "^1.7.0"
+mypy = "^0.800"
+wheel = "^0.36.2"
+twine = "^3.3.0"
+
+[tool.isort]
+profile = "black"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
