@@ -26,7 +26,7 @@ classifiers = [
     "Topic :: Text Processing :: Markup",
 ]
 packages = [
-    { include = "sphinxjp" },
+    { include = "sphinxjp", from = "src" },
 ]
 include = [
     "AUTHORS.txt",
