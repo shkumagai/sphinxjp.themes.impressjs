@@ -44,14 +44,14 @@ python = "^3.6"
 Sphinx = "^3.5"
 
 [tool.poetry.dev-dependencies]
-tox = "^3.21.3"
+tox = "^3.23.0"
 black = "^20.8b1"
 isort = "^5.7.0"
-flake8 = "^3.8.4"
+flake8 = "^3.9.0"
 bandit = "^1.7.0"
-mypy = "^0.800"
+mypy = "^0.812"
 wheel = "^0.36.2"
-twine = "^3.3.0"
+twine = "^3.4.1"
 
 [tool.isort]
 profile = "black"
