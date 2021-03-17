@@ -51,7 +51,7 @@ flake8 = "^3.8.4"
 bandit = "^1.7.0"
 mypy = "^0.800"
 wheel = "^0.36.2"
-twine = "^3.3.0"
+twine = "^3.4.1"
 
 [tool.isort]
 profile = "black"
