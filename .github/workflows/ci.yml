@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.5, 3.6, 3.7, 3.8, 3.9, 3.10-dev]
+        python-version: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11']
       max-parallel: 1
 
     steps:
@@ -16,28 +16,11 @@ jobs:
         run: echo $GITHUB_CONTEXT
 
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 1
 
-      - name: pycache
-        uses: actions/cache@v2
-        id: pycache
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
-      - name: Setup python ${{ matrix.python-version }}
-        uses: actions/setup-python@v2
-        if: "!endsWith(matrix.python-version, '-dev')"
-        with:
-          python-version: ${{ matrix.python-version }}
-
-      - name: Setup python ${{ matrix.python-version }} (via deadsnakes)
-        uses: deadsnakes/action@v2.1.1
-        if: "endsWith(matrix.python-version, '-dev')"
+      - uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
 
@@ -55,18 +38,18 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        env: [flake8, isort, bandit, readme]
+        env: ['flake8', 'isort', 'bandit', 'readme']
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 1
 
       - name: Setup python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
-          python-version: 3.8
+          python-version: '3.11'
 
       - name: Install tox and any other dependencies for test
         run: |
