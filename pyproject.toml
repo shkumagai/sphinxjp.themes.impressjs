@@ -12,8 +12,6 @@ classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.6",
-    "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Framework :: Sphinx",
@@ -40,11 +38,11 @@ include = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.8"
 Sphinx = "^4.3"
 
 [tool.poetry.dev-dependencies]
-tox = "^3.27.1"
+tox = "^3.28.0"
 black = "^20.8b1"
 isort = "^5.8.0"
 flake8 = "^4.0.1"
