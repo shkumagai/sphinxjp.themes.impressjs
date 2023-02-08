@@ -48,7 +48,7 @@ isort = "^5.8.0"
 flake8 = "^4.0.1"
 bandit = "^1.7.1"
 mypy = "^0.971"
-wheel = "^0.37.1"
+wheel = "^0.38.1"
 twine = "^3.8.0"
 
 [tool.isort]
