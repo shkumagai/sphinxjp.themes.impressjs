@@ -47,7 +47,7 @@ black = "^23.1"
 isort = "^5.8.0"
 flake8 = "^5.0.4"
 bandit = "^1.7.1"
-mypy = "^0.971"
+mypy = "^1.0"
 wheel = "^0.38.1"
 twine = "^4.0.2"
 
