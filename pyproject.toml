@@ -42,7 +42,7 @@ python = "^3.8"
 Sphinx = "^6.1"
 
 [tool.poetry.dev-dependencies]
-tox = "^4.4.7"
+tox = "^4.4.11"
 black = "^23.3"
 isort = "^5.8.0"
 flake8 = "^5.0.4"
