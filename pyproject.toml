@@ -39,7 +39,7 @@ include = [
 
 [tool.poetry.dependencies]
 python = "^3.8"
-Sphinx = "^6.1"
+Sphinx = "^6.2"
 
 [tool.poetry.dev-dependencies]
 tox = "^4.5.0"
