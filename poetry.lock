@@ -1401,13 +1401,13 @@ files = [
 
 [[package]]
 name = "wheel"
-version = "0.41.2"
+version = "0.41.3"
 description = "A built-package format for Python"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "wheel-0.41.2-py3-none-any.whl", hash = "sha256:75909db2664838d015e3d9139004ee16711748a52c8f336b52882266540215d8"},
-    {file = "wheel-0.41.2.tar.gz", hash = "sha256:0c5ac5ff2afb79ac23ab82bab027a0be7b5dbcf2e54dc50efe4bf507de1f7985"},
+    {file = "wheel-0.41.3-py3-none-any.whl", hash = "sha256:488609bc63a29322326e05560731bf7bfea8e48ad646e1f5e40d366607de0942"},
+    {file = "wheel-0.41.3.tar.gz", hash = "sha256:4d4987ce51a49370ea65c0bfd2234e8ce80a12780820d9dc462597a6e60d0841"},
 ]
 
 [package.extras]
@@ -1431,4 +1431,4 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "171ad95c97a708d5960d772a4633bf9dc9b29eb73b6e2fc5d74ebafe04371a4c"
+content-hash = "b50bcccf9a555c153e920ab6e58692dd015bc89cb796691decac8e0a236311a3"
