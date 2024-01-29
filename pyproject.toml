@@ -43,7 +43,7 @@ Sphinx = ">5.1"
 
 [tool.poetry.dev-dependencies]
 tox = "^4.12.1"
-black = "^23.12"
+black = "^24.1"
 isort = "^5.13.2"
 flake8 = "^5.0.4"
 bandit = "^1.7.6"
