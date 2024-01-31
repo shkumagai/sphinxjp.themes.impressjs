@@ -4,21 +4,39 @@ SRC_DIR := node_modules/impress.js
 DEST_DIR := sphinxjp/themes/impressjs/templates/impressjs/static
 
 update-impressjs:
-	npm install
-	cp -r $(SRC_DIR)/js $(DEST_DIR)/js
-	cp -r $(SRC_DIR)/css $(DEST_DIR)/css
+	@npm install
+	@cp -r $(SRC_DIR)/js $(DEST_DIR)/js
+	@cp -r $(SRC_DIR)/css $(DEST_DIR)/css
 
 package:
-	poetry build
+	@poetry run python -m build
 
 release-test:
-	twine upload --repository testpypi dist/*
+	@twine upload --repository testpypi dist/*
 
 release-prod:
-	twine upload --repository pypi dist/*
+	@twine upload --repository pypi dist/*
 
-clear-dist:
-	rm -rf dist/*
+clean:
+	@git clean -fdx
+
+dist-clean:
+	@rm -rf dist/*
 
 test:
-	tox
+	@nox -s test
+
+lint:
+	@nox -t lint
+
+fmt:
+	@nox -s fmt
+
+security:
+	@nox -s bandit
+
+typing:
+	@nox -s mypy
+
+readme:
+	@nox -s readme

@@ -4,6 +4,9 @@ dist/
 eggs/
 parts/
 .venv
+.nox/
+.mypy_cache/
+.ruff_cache/
 .installed.cfg
 _build/
 *.egg-info/

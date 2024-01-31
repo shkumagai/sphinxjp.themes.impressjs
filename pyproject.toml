@@ -12,8 +12,9 @@ classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
     "Framework :: Sphinx",
     "Framework :: Sphinx :: Extension",
     "Framework :: Sphinx :: Theme",
@@ -38,22 +39,41 @@ include = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.8"
-Sphinx = ">5.1"
+python = "^3.9"
+Sphinx = ">7.1"
 
-[tool.poetry.dev-dependencies]
-tox = "^4.12.1"
-black = "^24.1"
-isort = "^5.13.2"
-flake8 = "^5.0.4"
-bandit = "^1.7.7"
-mypy = "^1.8"
-wheel = "^0.42.0"
-twine = "^4.0.2"
+[tool.poetry.group.dev.dependencies]
+nox = "^2023.4.22"
+build = "^1.0.3"
+
+[tool.ruff]
+select = ["E", "F", "COM", "RET502", "RET503", "T20"]
+ignore = [
+    "E203",   # Whitespace before '{symbol}'
+    "E501",   # Line too long ({width} > {limit})
+    "E722",   # Do not use bare except
+]
+
+target-version = "py310"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
 
 [tool.isort]
 profile = "black"
 
+[tool.mypy]
+strict_optional = true
+ignore_missing_imports = true
+check_untyped_defs = true
+warn_no_return = false
+show_traceback = true
+allow_redefinition = true
+incremental = true
+
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=1.2.0"]
 build-backend = "poetry.core.masonry.api"
