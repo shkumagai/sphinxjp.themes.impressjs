@@ -46,7 +46,8 @@ class Impressjs(Directive):
     node_class = impressjs
 
     def run(self):
-        """ build impressjs node """
+        """build impressjs node"""
+
         set_classes(self.options)
         self.assert_has_content()
         text = "\n".join(self.content)
@@ -63,7 +64,8 @@ class Impressjs(Directive):
 
 
 def visit_impressjs(self, node):
-    """ build div start tag for impres.js """
+    """build div start tag for impres.js"""
+
     atts = {"class": "step"}
 
     if "data-x" in node:
@@ -89,7 +91,8 @@ def visit_impressjs(self, node):
 
 
 def depart_impressjs(self, node=None):
-    """ build div end tag """
+    """build div end tag"""
+
     self.body.append("</div>\n")
 
 

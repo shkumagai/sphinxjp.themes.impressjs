@@ -1,0 +1,17 @@
+# http://editorconfig.org
+
+root = true
+
+[*]
+indent_size = 4
+indent_style = space
+trim_trailing_whitespace = true
+insert_final_newline = true
+charset = utf-8
+end_of_line = lf
+
+[Makefile,*.bat]
+indent_style = tab
+
+[*.{js,ts,json}]
+indent_size = 2

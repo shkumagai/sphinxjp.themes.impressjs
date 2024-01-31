@@ -10,7 +10,6 @@ include setup.cfg
 include setup.py
 
 exclude .editorconfig
-exclude .pyup.yml
 exclude *.json
 exclude *.lock
 exclude Makefile

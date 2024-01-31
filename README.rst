@@ -34,8 +34,8 @@ Requirement
 ===========
 Libraries:
 
-* Python 3.6 or later
-* Sphinx 3.0 or later.
+* Python 3.9 or later
+* Sphinx 7.2 or later.
 
 
 Browsers:
