@@ -44,7 +44,7 @@ Sphinx = ">7.1"
 
 [tool.poetry.group.dev.dependencies]
 nox = "^2024.3.2"
-build = "^1.0.3"
+build = "^1.2.1"
 
 [tool.ruff]
 select = ["E", "F", "COM", "RET502", "RET503", "T20"]
