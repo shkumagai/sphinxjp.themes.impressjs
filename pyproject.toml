@@ -43,7 +43,7 @@ python = "^3.9"
 Sphinx = ">7.1"
 
 [tool.poetry.group.dev.dependencies]
-nox = "^2024.4.15"
+nox = "^2025.2.9"
 build = "^1.2.2"
 
 [tool.ruff]
