@@ -6,7 +6,7 @@ updates:
     interval: weekly
     time: "20:00"
   open-pull-requests-limit: 10
-- package-ecosystem: pip
+- package-ecosystem: uv
   directory: "/"
   schedule:
     interval: weekly
