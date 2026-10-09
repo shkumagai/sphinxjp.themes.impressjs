@@ -34,7 +34,7 @@ Requirement
 ===========
 Libraries:
 
-* Python 3.9 or later
+* Python 3.11 or later
 * Sphinx 7.2 or later.
 
 
