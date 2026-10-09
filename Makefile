@@ -9,7 +9,7 @@ update-impressjs:
 	@cp -r $(SRC_DIR)/css $(DEST_DIR)/css
 
 package:
-	@poetry run python -m build
+	@uv build
 
 release-test:
 	@twine upload --repository testpypi dist/*
@@ -24,19 +24,19 @@ dist-clean:
 	@rm -rf dist/*
 
 test:
-	@nox -s test
+	@uv run nox -s test
 
 lint:
-	@nox -t lint
+	@uv run nox -t lint
 
 fmt:
-	@nox -s fmt
+	@uv run nox -s fmt
 
 security:
-	@nox -s bandit
+	@uv run nox -s bandit
 
 typing:
-	@nox -s mypy
+	@uv run nox -s mypy
 
 readme:
-	@nox -s readme
+	@uv run nox -s readme

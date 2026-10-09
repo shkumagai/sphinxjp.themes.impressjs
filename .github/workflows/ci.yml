@@ -25,15 +25,13 @@ jobs:
           python-version: ${{ matrix.python-version }}
           allow-prereleases: true
 
-      - name: Install nox and any other dependencies for test
-        run: |
-          python -m pip install --upgrade pip
-          pip install nox
+      - name: Setup uv
+        uses: astral-sh/setup-uv@37802adc94f370d6bfd71619e3f0bf239e1f3b78 # v7.6.0
 
       - name: Run nox
         run: |
           python -V
-          nox -s test-${{ matrix.python-version }}
+          uv run --frozen nox -s test-${{ matrix.python-version }}
 
   lint:
     runs-on: ubuntu-latest
@@ -52,10 +50,8 @@ jobs:
         with:
           python-version: '3.14'
 
-      - name: Install tox and any other dependencies for test
-        run: |
-          python -m pip install --upgrade pip
-          pip install nox
+      - name: Setup uv
+        uses: astral-sh/setup-uv@37802adc94f370d6bfd71619e3f0bf239e1f3b78 # v7.6.0
 
       - name: Run nox
-        run: nox -s ${{ matrix.env }}
+        run: uv run --frozen nox -s ${{ matrix.env }}
