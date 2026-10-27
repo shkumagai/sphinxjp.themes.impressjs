@@ -37,7 +37,7 @@ Homepage = "https://github.com/shkumagai/sphinxjp.themes.impressjs"
 
 [dependency-groups]
 dev = [
-    "nox>=2025.11.12",
+    "nox>=2026.10.20",
 ]
 
 [tool.uv.build-backend]
